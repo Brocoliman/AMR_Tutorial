@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <title> Brocolimanx YT </title>    
+    </head>
+    <body>
+      <div>
+        <h1>This is </h1>
+      </div>
+      <div>
+        <h5>Brocolimanx(but my git username is Brocoliman)</h5>
+        <h5> So your looking to be like a Marble Race Youtuber like me. Let's Begin.</h5>
+      </div>
+      <div> <h1>Intro</h1>
+      </div>
+      <div><h5>Of course, if you're here, then your interested in making Marble Races. Here's my thoughts about making 
+        Marble Races:</h5>
+      </div>
+      <div>
+      <ol>
+        <li> You'll need to learn many contraptions by yourself, for example, I learned to make "Break the Wall" 
+           by myself, but of course I'll show you how to make the contraptions I had to make</li>
+        <li> Be familiar with coding, since based on number 1, you may need to figure stuff out by yourself, and that
+           includes scripting</li>
+        <li> Make sure to change your series subject and switch out of the Classic Marble Race Track
+           quick, or otherwise the audience might get bored</li>
+      </ol>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/channel/UCxleSqkNgg8lUecJfDFjhGQ">My YT Channel </a>
+      </div>
+      <div>
+        <img src="https://github.com/Brocoliman/Portfolio/blob/master/channel_icon.jpg?raw=true" width = "200" height = "200" >
+        <img src="https://github.com/Brocoliman/Portfolio/blob/master/AMR_1_thumb.jpeg?raw=true" width = "320" height = "180">
+        <img src="https://github.com/Brocoliman/Portfolio/blob/master/AMR_2_thumb.jpeg?raw=true" width = "320" height = "180">
+        <img src="https://github.com/Brocoliman/Portfolio/blob/master/AMR_3_thumb.jpeg?raw=true" width = "320" height = "180">
+        <img src="https://raw.githubusercontent.com/Brocoliman/Portfolio/master/AMR_2_1_thumb.webp" width = "320" height = "180">
+        <img src="https://github.com/Brocoliman/Portfolio/blob/master/AMR_2_2_thumb.jpeg?raw=true" width = "320" height = "180">
+        <img src="https://raw.githubusercontent.com/Brocoliman/Portfolio/master/AMR_Halloween_thumb.webp" width = "320" height = "180">
+        <img src="https://raw.githubusercontent.com/Brocoliman/Portfolio/master/AMR_ST_thumb.webp" width = "320" height = "180">
+        <img src="https://raw.githubusercontent.com/Brocoliman/Portfolio/master/MGMR_1_thumb.webp" width = "320" height = "180">
+      </div>
+    </body>
+  </html>
