@@ -36,3 +36,7 @@ div#seventh{
 .navbar a:hover{
   background-color: #8a8a8a;
 }
+
+.title{
+  border-style: none;
+}
