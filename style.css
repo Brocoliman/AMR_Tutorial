@@ -1,1 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url("https://github.com/Brocoliman/Portfolio/blob/master/channel_icon.jpg?raw=true");
+  color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: visible;
+}
+
+h5{
+  font-size: 15px;
+  border-style: dashed; 
+}
+div#seventh{
+  opacity: 0.4;
+}
