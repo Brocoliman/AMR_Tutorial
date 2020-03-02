@@ -23,6 +23,7 @@ div#seventh{
   background-color: #000000;
   position: fixed;
   padding-top: 80px;
+  width: 100%;
 }
 
 .navbar a{
