@@ -21,6 +21,7 @@ div#seventh{
 .navbar{
   overflow: hidden;
   background-color: #000000;
+  position: fixed
 }
 
 .navbar a{
