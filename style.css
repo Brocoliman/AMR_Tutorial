@@ -39,4 +39,9 @@ div#seventh{
   color: #000000;
 }
 
+.navbar-top{
+  overflow: hidden;
+  position: fixed;
+}
+
 
