@@ -22,7 +22,8 @@ div#seventh{
   overflow: hidden;
   background-color: #000000;
   position: fixed;
-  padding-top: 80px;
+  padding-top: 60px;
+  top:0;
   width: 100%;
 }
 
