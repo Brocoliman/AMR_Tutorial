@@ -24,7 +24,6 @@ div#seventh{
   position: fixed;
   padding-top: 60px;
   top:0;
-  width: 100%;
 }
 
 .navbar a{
@@ -32,7 +31,7 @@ div#seventh{
   display: block;
   color: #ffffff;
   text-align: center;
-  padding: 40px 12px;
+  padding: 40px 900px;
   text-decoration: none;
   font-size: 16px;
 }
