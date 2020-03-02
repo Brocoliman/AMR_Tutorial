@@ -21,7 +21,6 @@ div#seventh{
 .navbar{
   overflow: hidden;
   background-color: #000000;
-  position: fixed;
 }
 
 .navbar a{
@@ -37,11 +36,6 @@ div#seventh{
 .navbar a:hover{
   background-color: #ffffff;
   color: #000000;
-}
-
-.navbar-top{
-  overflow: hidden;
-  position: fixed;
 }
 
 
