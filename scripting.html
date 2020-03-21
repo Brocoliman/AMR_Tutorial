@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-image: url("https://github.com/Brocoliman/Portfolio/blob/master/channel_icon.jpg?raw=true");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #FFFFFF;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        overflow: visible;
+        clear: both;
+      }
+
+      h5{
+        font-size: 15px; 
+      }
+      div#seventh{
+        opacity: 0.4;
+      }
+
+      .navbar2{
+        overflow: hidden;
+        background-color: #000000;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+      }
+
+      .navbar2 a{
+        float: left;
+        display: block;
+        color: #ffffff;
+        text-align: center;
+        padding: 14px 12px;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .navbar2 a:hover{
+        background-color: #ffffff;
+        color: #000000;
+      }
+      
+      .bigheader{
+        color: #ffffff;
+      }
+      
+      .jumbotron{
+        background-color: #c2c5cc;
+        z-index: 1;
+        height: 125%
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class ="navbar2">
+        <h1>Brocolimanx</h1>
+        <a href = "https://brocoliman.github.io/amr_tutorial/home.html"> Home </a>
+        <a href = "https://brocoliman.github.io/amr_tutorial/tutorial.html"> Tutorials</a>
+        <a href = "https://brocoliman.github.io/amr_tutorial/scripting.html">Scripting</a>
+        <a href = "https://www.youtube.com/channel/UCxleSqkNgg8lUecJfDFjhGQ"> Youtube Channel</a>
+    </div>
+    <div>
+      <h1>
+       Intro to Scripting 
+      </h1>
+    </div>
+    <div>
+      This setup tutorial is only supported by PCs, not mobile devices. 
+      The actual marble race making tutorial can work on mobile, though.
+      Note that the tutorials below are just a foundation. The contraptions you make are actually based off all of them.
+      This is the Intermediate level, Scripting.
+    </div>
+    <div>
+      <h5>
+        To start, go along with the following steps:
+      </h5>
+      <ol>
+        <li>Go to the<a href="http://www.algodoo.com/download/"> Algodoo Download Page</a></li>
+        <li>Scroll down to the Free Downloads and choose the download corresponding to your computer</li>
+        <li>Follow the rest of instructions given by the download</li>
+      </ol>
+    </div>
+    <div>
+      <h1>
+       Basic Tools
+      </h1>
+    </div>
+    <div>
+      Go to the bottom right corner, and you will see a toolkit. Go ahead, experiment all you want!
+    </div>
+    <div>
+      <h3>Notes:</h3>
+      <ul>
+        <li>Several tools, when used with a right click, may redirect to another tool</li>
+        <li>If you use shift with a drawing, erasing, or cutting tool, it operates the tool in a line, for example, when you hold
+            shift while erasing, it erases in a straight line</li>
+        <li>Many(Not to mention, all) tools have checkboxes on the right of the toolkit for options</li>
+        <li>The Grid option, far right of the play button, lets you put objects at a relative distance to the grid lines, improving neatness</li>
+      <ul>
+    </div>
+    <div>
+      <h1>
+       Making Marbles 
+      </h1>
+    </div>
+    <div>
+      <h5>
+        To start, go along with the following steps:
+      </h5>
+      <ol>
+        <li>Use the Circle Tool to create a circle of your desired size</li>
+        <li>Right click on the circle, and click on appearance. 
+          Don't get too bewildered, and if you do, you will regret clicking on the script menu
+          (The script menu will be the most important thing you use later on)</li>
+        <li>Take a look at the checkboxes below the color picker. Make sure Borders, Protractor, and most importantly, Circle Pie
+          are unchecked. Then, of course, pick the color of your marble</li>
+        <li>These are the 15 standard marble colors for me in RGB: </li> 
+        <ol>
+          <li>Red(255,0,0)</li> 
+          <li>Maroon(135,0,0)</li> 
+          <li>Orange(255,140,0)</li> 
+          <li>Brown(135,70,0)</li>
+          <li>Yellow(255,255,0) </li>
+          <li>Olive(135,135,0) </li>
+          <li>Lime(0,255,0) </li>
+          <li>Green(0,135,0) </li>
+          <li>Cyan(0,255,255) </li>
+          <li>Blue(0,0,255) </li>
+          <li>Magenta(255,0,255)</li>
+          <li>Purple(135,0,255) </li>
+          <li>Black(0,0,0) </li>
+          <li>Gray(135,135,135)</li>
+          <li>White(255,255,255)</li>
+        </ol>
+        <li>Re-enter the menu, and go to the Geometry Actions. Click Add Tracer. The tracer will appear on the center of the marble and an outlined circle</li>
+        <li>Exit the Marble menu, and go to the Tracer menu. Set the size of the Tracer in the Tracer section to near the size of the marble, but not 
+            bigger. If you do set the tracer bigger, then the Marble will have an outline and the trace on the Marble will look weird</li>
+        <li>Go to Selection in the Tracer menu, and click "Move selected to back". This way, the tracer won't show up in front of the Marble. Test it, and 
+          drag the marble around with the drag tool!</li>
+        <li>To make more Marbles, hold the control(or command for Mac) key and drag the currently existing marble.</li>
+      </ol>
+    </div>
+    <div>
+      <h1>
+       Simple Tracks & THE BOWL 
+      </h1>
+    </div>
+    <div>
+      The track is a foundation of Marble Racing. The bowl is known for its originality.
+    </div>
+    <div>
+      <h5>
+        To make a Simple Track, go along with the following steps:
+      </h5>
+      <ol>
+        <li>It is preferred to use rectangles than the brush, so make a long rectangle and color it with your marble race theme. 
+          If there is no theme, use black(for everything besides the marbles and transparent stuff).</li>
+        <li>Try making all the track rectangles the same height</li>
+        <li>*For Later reference*If you change the collision layer of the marbles, make sure the track also has that layer
+            checked, unless you don't want the marble to collide with it</li>
+      </ol>
+      </div>
+      <div>
+        To make a Bowl, go along with the following steps:
+      </div>
+      <div>  
+      <ol>
+          <li>Make a rectangle(size is on you)</li>
+          <li>Get the Eraser Tool, and set the size of it to how big you want the inner bowl to be </li>
+          <li>From top to near bottom of the rectangle, hold shift while dragging down with the eraser tool, and make sure it is completely vertical</li>
+          <li>Set the size of the eraser to slightly bigger(not too much) than the marbles</li>
+          <li>Use this eraser to carve a hole at the bottom of the bowl</li>
+      </ol>
+    </div>
+    <div>
+      <h1>
+       Spinners 
+      </h1>
+    </div>
+    <div>
+      Spinners are used throughout every marble race. From Classic Marbles Races to fully themed Marble Racees, spinners is an important
+      part of Marble Races to be able to make.
+    </div>
+    <div>
+      <h5>
+        To start, go along with the following steps:
+      </h5>
+      <ol>
+        <li>Make a custom sized rectangle(The height should be 5 times the width)</li>
+        <li>Hold Ctrl or Command, based on your computer, and then click on the rectangle. This creates a copy of it</li>
+        <li>Click(yep, only click, do not select)the rectangle, then Turn it 90 degrees. The original rectangle below should stay where it was at the beginning</li>
+        <li>Now you should have a plus sign. These next steps are very important.</li>
+        <li>From the plus sign, select the rectangle that has overlaps the other, and go in the menu. Then, click on Combine Shapes, and after that, 
+            click Add. Then exit the menu. Now, delete the rectangle that overlaps the other. You will now see just a plus sign, no overlaps</li>
+        <li>Enter the plus sign menu, and go to Geometry Action. Click on add axle. The Axle will be shown on the plus sign(now about to be a spinner)</li>
+        <li>Go in the Axle menu, and turn the "a"(In the HSVA slider section) in the Appearance section to 0</li>
+        <li>Go to the Axle section, and click the check on Motor. 2 sliders will appear, and set the one that says Motor Torque to the max(or maybe 
+          100 ^ 1000, which sets it to infinite). The Motor Speed is to your choice</li>
+      </ol>
+    </div>
+    <div>
+      <h1>
+       Trampolines 
+      </h1>
+    </div>
+    <div>
+      Trampolines, otherwise known as bounce pads, are not used very much. Instead, velocity pads are used more, and are more advanced.
+      But, hey, it is still good to learn something than to not.
+    </div>
+    <div>
+      <h5>
+        To start, go along with the following steps:
+      </h5>
+      <ol>
+        <li>Make a custom sized rectangle</li>
+        <li>Go in the Menu, then to Material. Set the restitution to a custom value. 1000 makes an object bounce on it, with the same bounce height every time</li>
+      </ol>
+    </div>
+    <div>
+      <h1>
+       Text 
+      </h1>
+    </div>
+    <div>
+      Words are used commonly throughout Marble Races. That's why you should know how to make them!
+    </div>
+    <div>
+      <h5>
+        To start, go along with the following steps:
+      </h5>
+      <ol>
+        <li>Make a custom sized rectangle</li>
+        <li>Go in the Menu, and in the Text section, add the words you want in the big box</li>
+        <li>You can change the color of the text at the color selection below the box</li>
+        <li>Maybe your text looks a bit too small, so change the font size to your desire</li>
+        <li>Maybe your texts looks a bit too pixelated, so change the font resolution to the max</li>
+      </ol>
+    </div>
+    <div>
+      <h1>
+       Conveyor 
+      </h1>
+    </div>
+    <div>
+      Conveyors are commonly used in basic marble races. That's all I can say:)
+    </div>
+    <div>
+      <h5>
+        To start, go along with the following steps:
+      </h5>
+      <ol>
+        <li>Make a custom shaped spinner(Oval and square ones are recommended)</li>
+        <li>Make a copy of the spinner, and put it next to the original</li>
+        <li>Set the collision layer of the 2nd different from the first. This prevents the 2 spinners from getting stuck on each other. If your 2 spinners 
+            are too far away to collidee with each other, move them closer.</li>
+        <li>Turn the 2nd spinner so it is pointing 90 degrees right of the 1st.</li>
+        <li>Make a copy of both(I recommend to copy them at the same time to make it neat), and put the copy next to the original 2. Do the distance check shown in step 3. Now you should have 4 spinners</li>
+        <li>Make as much copies as you want, and remember to distance check them.</li>
+      </ol>
+    </div>
+    <div>
+      <h1>
+       Controller(*Important!*) 
+      </h1>
+    </div>
+    <div>
+      Controllers are used to start a section of a marble race, by hand. After making one, press the trigger key and the block will disappear, lettin
+      any Marble above it start the next section of your race.
+    </div>
+    <div>
+      <h5>
+        To start, go along with the following steps:
+      </h5>
+      <ol>
+        <li>Make a custom shape to be destroyed</li>
+        <li>Go in the objects Menu, and go in Controller. Set the destroy key by clicking on "[none selected]"</li>
+      </ol>
+    </div>
+    <div>
+      <h1>
+       Piston **!!!More Important!!!**
+      </h1>
+    </div>
+    <div>
+      Pistons may not sound or look important at first, but it is used to move an object back and forth, while using a script to make 
+      an object do the same thing is just a little too complicated to explain. Note: The steps of how to make it written by me down below
+      is using my best explaining abilities.
+    </div>
+    <div>
+      <h5>
+        To start, go along with the following steps:
+      </h5>
+      <ol>
+        <li>Make a custom sized rectangle, with the height 5 times as much as the width. Make sure to glue it to the background</li>
+        <li>Make a copy of it and put the copy next to the original, horizontally. Space the distance between them as the width of the moving object</li>
+        <li>Make a custom object(this will be the moving object), and fit it between the rectangle created on the previous step. Do not glue it to the background</li>
+        <li>Make a custom sized circle. The circumference of the circle will be how far the moving object moves. Do not glue it to the background</li>
+        <li>Use a brush, or make a rectangle, that overlaps the moving object on one side, and the circle on the other. Do not glue it to the background</li>
+        <li>Put an axle with the axle tool on the space where the bar overlaps the circle, and where it overlaps the moving object. If you make a motor on it, good luck
+            with seeing your piston wobble back and forth right when you run the simulation</li>
+        <li>Go in the menu for the circle, and add a center axle in Geometry Actions. Set the Motor Torque very high, and the speed is for you to decide.</li>
+        <li>*One last step* Make sure that the moving object and the rectangles made in step 1 have at least 1 common collision layer</li>
+        <li>...aaannd your done!!! It should work like a piston now</li>
+      </ol>
+    </div>
+    <div>
+      <h1>
+       Conclusion...for the Beginner level, at least... 
+      </h1>
+    </div>
+    <div>
+      Make a fantastic marble, maybe, and say bye to this website. Or continue to the Intermediate Level, and instead of just making boring classic Marble Races,
+      you can make better ones...more chaotic...or more epic...or maybe, get to the legendary <a href="https://www.youtube.com/channel/UC7dTk7z9VcaHiYmUP0ytZcg">
+      Doc 671</a>'s level(Don't try this at home, everyone).
+    </div>
+    <div class="jumbotron text-center">
+      <h1 class="bigheader"> <a href="https://brocoliman.github.io/amr_tutorial/scripting.html">The Next Section: Scripting</a> </h1>
+    </div>
+  </body>
+</html>
