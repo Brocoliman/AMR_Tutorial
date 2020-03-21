@@ -115,39 +115,22 @@
       </h1>
     </div>
     <div>
+      Teleporters are the most important things in Marble Races. You may not even see it in action; it might be in the backstage!
+    </div>
+    <div>
       <h5>
         To make a simple, go along with the following steps:
       </h5>
       <ol>
         <li>Make 2 custom sized shapes</li>
         <li>Go in ones script menu, and in onCollide, in the "(e)=>{}"(you never put your code outside of that, unless the section doesn't have it), type:
-             e.other.pos = my.[]</li>
-        <li>Take a look at the checkboxes below the color picker. Make sure Borders, Protractor, and most importantly, Circle Pie
-          are unchecked. Then, of course, pick the color of your marble</li>
-        <li>These are the 15 standard marble colors for me in RGB: </li> 
-        <ol>
-          <li>Red(255,0,0)</li> 
-          <li>Maroon(135,0,0)</li> 
-          <li>Orange(255,140,0)</li> 
-          <li>Brown(135,70,0)</li>
-          <li>Yellow(255,255,0) </li>
-          <li>Olive(135,135,0) </li>
-          <li>Lime(0,255,0) </li>
-          <li>Green(0,135,0) </li>
-          <li>Cyan(0,255,255) </li>
-          <li>Blue(0,0,255) </li>
-          <li>Magenta(255,0,255)</li>
-          <li>Purple(135,0,255) </li>
-          <li>Black(0,0,0) </li>
-          <li>Gray(135,135,135)</li>
-          <li>White(255,255,255)</li>
-        </ol>
-        <li>Re-enter the menu, and go to the Geometry Actions. Click Add Tracer. The tracer will appear on the center of the marble and an outlined circle</li>
-        <li>Exit the Marble menu, and go to the Tracer menu. Set the size of the Tracer in the Tracer section to near the size of the marble, but not 
-            bigger. If you do set the tracer bigger, then the Marble will have an outline and the trace on the Marble will look weird</li>
-        <li>Go to Selection in the Tracer menu, and click "Move selected to back". This way, the tracer won't show up in front of the Marble. Test it, and 
-          drag the marble around with the drag tool!</li>
-        <li>To make more Marbles, hold the control(or command for Mac) key and drag the currently existing marble.</li>
+             e.other.pos = my.*var1</li>
+        <li>Go in the other object's script, and in the postStep, write: my.*var1 = pos</li> 
+        <li>*The code after the asterisk is a variable, so you can customize the name, as long as both are same</li>
+        <li>The teleporter will only work if an object goes in the right one, which is the one coded in Step 2. Also, the teleporter won't work on an 
+            object that doesn't have any common collision layer as the teleporter. It is best to cancel out all the collision layers
+            of the Step 3 rectangle</li>
+        <li>There!!Try it out ;)</li>
       </ol>
     </div>
     <div>
