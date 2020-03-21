@@ -77,6 +77,7 @@
     <div>
       This tutorial assumes that you already know how to make a basic Marble Race. If not, go the <a href = "https://broco
         liman.github.io/amr_tutorial/tutorial.html"> tutorials page</a> .
+      When the code given has an asterisk(*) in a part, do not type the asterisk; instead follow the direction in the asterisk after the code.
       Note that the tutorials below are just a foundation. The contraptions you make are actually based off all of them.
       This is the Intermediate level, Scripting.
     </div>
@@ -87,7 +88,7 @@
       <ol>
         <li>Go in the Menu</li>
         <li>Find the Script Menu</li>
-        <li>Don't get nervous from the size of it; You'll soon get familiar with it</li>
+        <li>Don't get nervous from the size of the script; You'll soon get familiar with it</li>
       </ol>
     </div>
     <div>
@@ -98,26 +99,29 @@
     <div>
       <h3>Notes:</h3>
       <ul>
+        <li>Some of the sections are conditions, for example, onCollide, that triggers a certain code, while some of them
+            are variables of the object, for example, the text</li>
         <li>The onCollide code is triggered when another object touches it</li>
         <li>The update code is triggered every 60th of a second</li>
-        <li></li>
-        <li></li>
+        <li>You can create variables in the top bar below the scripting description</li>
+        <li>A variable lock can be used so an object, especially teleporters that teleport other teleporters, does not get any of its attributes changed. 
+            They can be made by putting a certain variable set in the update section</li>
+        <li>For more tips regarding the script, check out the <a href="https://algodoo.fandom.com/wiki/Thyme">Algodoo Scripting Wiki</a></li>
       <ul>
     </div>
     <div>
       <h1>
-       Making Marbles 
+       Teleporter 
       </h1>
     </div>
     <div>
       <h5>
-        To start, go along with the following steps:
+        To make a simple, go along with the following steps:
       </h5>
       <ol>
-        <li>Use the Circle Tool to create a circle of your desired size</li>
-        <li>Right click on the circle, and click on appearance. 
-          Don't get too bewildered, and if you do, you will regret clicking on the script menu
-          (The script menu will be the most important thing you use later on)</li>
+        <li>Make 2 custom sized shapes</li>
+        <li>Go in ones script menu, and in onCollide, in the "(e)=>{}"(you never put your code outside of that, unless the section doesn't have it), type:
+             e.other.pos = my.[]</li>
         <li>Take a look at the checkboxes below the color picker. Make sure Borders, Protractor, and most importantly, Circle Pie
           are unchecked. Then, of course, pick the color of your marble</li>
         <li>These are the 15 standard marble colors for me in RGB: </li> 
