@@ -8,7 +8,6 @@
     <title> Scripting </title>
     <style>
       body {
-        padding-top: 100px;
         font-family: 'Poppins', sans-serif;
         background-image: url("https://github.com/Brocoliman/Portfolio/blob/master/channel_icon.jpg?raw=true");
         background-repeat: no-repeat;
@@ -59,7 +58,10 @@
         background-color: #c2c5cc;
         z-index: 1;
         height: 125%
-
+      }
+      
+      .content{
+        padding-top: 100px;
       }
     </style>
   </head>
@@ -71,91 +73,93 @@
         <a href = "https://brocoliman.github.io/amr_tutorial/scripting.html">Scripting</a>
         <a href = "https://www.youtube.com/channel/UCxleSqkNgg8lUecJfDFjhGQ"> Youtube Channel</a>
     </div>
-    <div>
-      <h1>
-       Intro to Scripting 
-      </h1>
-    </div>
-    <div>
-      This tutorial assumes that you already know how to make a basic Marble Race. If not, go the <a href = "https://broco
-        liman.github.io/amr_tutorial/tutorial.html"> tutorials page</a> .
-      When the code given has an asterisk(*) in a part, do not type the asterisk; instead follow the direction in the asterisk 
-      after the code, and it usually means that the code is custom.
-      Note that the tutorials below are just a foundation. The contraptions you make are actually based off all of them.
-      This is the Intermediate level, Scripting.
-    </div>
-    <div>
-      <h5>
-        To go in an object's script, go along with the following steps:
-      </h5>
-      <ol>
-        <li>Go in the Menu</li>
-        <li>Find the Script Menu</li>
-        <li>Don't get nervous from the size of the script; You'll soon get familiar with it</li>
-      </ol>
-    </div>
-    <div>
-      <h1>
-       Basic Functions
-      </h1>
-    </div>
-    <div>
-      <h3>Notes:</h3>
-      <ul>
-        <li>Some of the sections are conditions, for example, onCollide, that triggers a certain code, while some of them
-            are variables of the object, for example, the text</li>
-        <li>The onCollide code is triggered when another object touches it</li>
-        <li>The update code is triggered every 60th of a second</li>
-        <li>You can create variables in the top bar below the scripting description</li>
-        <li>A variable lock can be used so an object, especially teleporters that teleport other teleporters, does not get any of its attributes changed. 
-            They can be made by putting a certain variable set in the update section</li>
-        <li>For more tips regarding the script, check out the <a href="https://algodoo.fandom.com/wiki/Thyme">Algodoo Scripting Wiki</a></li>
-      <ul>
-    </div>
-    <div>
-      <h1>
-       Teleporter 
-      </h1>
-    </div>
-    <div>
-      Teleporters are the most important things in Marble Races. You may not even see it in action; it might be in the backstage!
-    </div>
-    <div>
-      <h5>
-        To make a teleporter, go along with the following steps:
-      </h5>
-      <ol>
-        <li>Make 2 custom sized shapes</li>
-        <li>Go in ones script menu, and in onCollide, in the "(e)=>{}"(you never put your code outside of that, unless the section doesn't have it), type:
-             e.other.pos = my.*varx</li>
-        <li>Go in the other object's script, and in the postStep, write: my.*var1 = pos</li> 
-        <li>*The code after the asterisk is a variable, so you can customize the name, as long as both are same</li>
-        <li>The teleporter will only work if an object goes in the right one, which is the one coded in Step 2. Also, the teleporter won't work on an 
-            object that doesn't have any common collision layer as the teleporter. It is best to cancel out all the collision layers
-            of the Step 3 rectangle</li>
-        <li>There!! Try it out ;)</li>
-      </ol>
-    </div>
-    <div>
-      <h1>
-       Velocity Pads 
-      </h1>
-    </div>
-    <div>
-      Same as teleporters, lots of backstage action. These velocity pads apply a certain velocity(direction and speed) to an object. 
-      These are unarguably the most used element in Marble Racing.
-    </div>
-    <div>
-      <h5>
-        To start, go along with the following steps:
-      </h5>
-      <ol>
-        <li>Make a custom shape(best to use a rectangle)</li>
-        <li>Go in the object's script, type: e.other.vel = *[x,y]</li>
-        <li>*The coordinates sends the object in that x(horizontal) and y(vertical). Note that the velocity pads do not add on to the 
-            the marble's(or any colliding object's) velocity; they simply replace them. </li>
-      </ol>
-    </div>
-    </div>
+    <div class="content">
+      <div>
+        <h1>
+         Intro to Scripting 
+        </h1>
+      </div>
+      <div>
+        This tutorial assumes that you already know how to make a basic Marble Race. If not, go the <a href = "https://broco
+          liman.github.io/amr_tutorial/tutorial.html"> tutorials page</a> .
+        When the code given has an asterisk(*) in a part, do not type the asterisk; instead follow the direction in the asterisk 
+        after the code, and it usually means that the code is custom.
+        Note that the tutorials below are just a foundation. The contraptions you make are actually based off all of them.
+        This is the Intermediate level, Scripting.
+      </div>
+      <div>
+        <h5>
+          To go in an object's script, go along with the following steps:
+        </h5>
+        <ol>
+          <li>Go in the Menu</li>
+          <li>Find the Script Menu</li>
+          <li>Don't get nervous from the size of the script; You'll soon get familiar with it</li>
+        </ol>
+      </div>
+      <div>
+        <h1>
+         Basic Functions
+        </h1>
+      </div>
+      <div>
+        <h3>Notes:</h3>
+        <ul>
+          <li>Some of the sections are conditions, for example, onCollide, that triggers a certain code, while some of them
+              are variables of the object, for example, the text</li>
+          <li>The onCollide code is triggered when another object touches it</li>
+          <li>The update code is triggered every 60th of a second</li>
+          <li>You can create variables in the top bar below the scripting description</li>
+          <li>A variable lock can be used so an object, especially teleporters that teleport other teleporters, does not get any of its attributes changed. 
+              They can be made by putting a certain variable set in the update section</li>
+          <li>For more tips regarding the script, check out the <a href="https://algodoo.fandom.com/wiki/Thyme">Algodoo Scripting Wiki</a></li>
+        <ul>
+      </div>
+      <div>
+        <h1>
+         Teleporter 
+        </h1>
+      </div>
+      <div>
+        Teleporters are the most important things in Marble Races. You may not even see it in action; it might be in the backstage!
+      </div>
+      <div>
+        <h5>
+          To make a teleporter, go along with the following steps:
+        </h5>
+        <ol>
+          <li>Make 2 custom sized shapes</li>
+          <li>Go in ones script menu, and in onCollide, in the "(e)=>{}"(you never put your code outside of that, unless the section doesn't have it), type:
+               e.other.pos = my.*varx</li>
+          <li>Go in the other object's script, and in the postStep, write: my.*var1 = pos</li> 
+          <li>*The code after the asterisk is a variable, so you can customize the name, as long as both are same</li>
+          <li>The teleporter will only work if an object goes in the right one, which is the one coded in Step 2. Also, the teleporter won't work on an 
+              object that doesn't have any common collision layer as the teleporter. It is best to cancel out all the collision layers
+              of the Step 3 rectangle</li>
+          <li>There!! Try it out ;)</li>
+        </ol>
+      </div>
+      <div>
+        <h1>
+         Velocity Pads 
+        </h1>
+      </div>
+      <div>
+        Same as teleporters, lots of backstage action. These velocity pads apply a certain velocity(direction and speed) to an object. 
+        These are unarguably the most used element in Marble Racing.
+      </div>
+      <div>
+        <h5>
+          To start, go along with the following steps:
+        </h5>
+        <ol>
+          <li>Make a custom shape(best to use a rectangle)</li>
+          <li>Go in the object's script, type: e.other.vel = *[x,y]</li>
+          <li>*The coordinates sends the object in that x(horizontal) and y(vertical). Note that the velocity pads do not add on to the 
+              the marble's(or any colliding object's) velocity; they simply replace them. </li>
+        </ol>
+      </div>
+      </div>
+     </div>
   </body>
 </html>
