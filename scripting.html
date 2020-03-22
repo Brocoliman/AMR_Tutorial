@@ -3,7 +3,8 @@
   <head>
     <meta charset = "utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title> Scripting </title>
     <style>
       body {
@@ -77,7 +78,8 @@
     <div>
       This tutorial assumes that you already know how to make a basic Marble Race. If not, go the <a href = "https://broco
         liman.github.io/amr_tutorial/tutorial.html"> tutorials page</a> .
-      When the code given has an asterisk(*) in a part, do not type the asterisk; instead follow the direction in the asterisk after the code.
+      When the code given has an asterisk(*) in a part, do not type the asterisk; instead follow the direction in the asterisk 
+      after the code, and it usually means that the code is custom.
       Note that the tutorials below are just a foundation. The contraptions you make are actually based off all of them.
       This is the Intermediate level, Scripting.
     </div>
@@ -119,12 +121,12 @@
     </div>
     <div>
       <h5>
-        To make a simple, go along with the following steps:
+        To make a teleporter, go along with the following steps:
       </h5>
       <ol>
         <li>Make 2 custom sized shapes</li>
         <li>Go in ones script menu, and in onCollide, in the "(e)=>{}"(you never put your code outside of that, unless the section doesn't have it), type:
-             e.other.pos = my.*var1</li>
+             e.other.pos = my.*varx</li>
         <li>Go in the other object's script, and in the postStep, write: my.*var1 = pos</li> 
         <li>*The code after the asterisk is a variable, so you can customize the name, as long as both are same</li>
         <li>The teleporter will only work if an object goes in the right one, which is the one coded in Step 2. Also, the teleporter won't work on an 
@@ -139,175 +141,20 @@
       </h1>
     </div>
     <div>
-      Same as teleporters, lots of backstage action. These are unarguably the most used element in Marble Racing.
-    </div>
-    <div>
-      <h5>
-        To make a Simple Track, go along with the following steps:
-      </h5>
-      <ol>
-        <li>It is preferred to use rectangles than the brush, so make a long rectangle and color it with your marble race theme. 
-          If there is no theme, use black(for everything besides the marbles and transparent stuff).</li>
-        <li>Try making all the track rectangles the same height</li>
-        <li>*For Later reference*If you change the collision layer of the marbles, make sure the track also has that layer
-            checked, unless you don't want the marble to collide with it</li>
-      </ol>
-      </div>
-      <div>
-        To make a Bowl, go along with the following steps:
-      </div>
-      <div>  
-      <ol>
-          <li>Make a rectangle(size is on you)</li>
-          <li>Get the Eraser Tool, and set the size of it to how big you want the inner bowl to be </li>
-          <li>From top to near bottom of the rectangle, hold shift while dragging down with the eraser tool, and make sure it is completely vertical</li>
-          <li>Set the size of the eraser to slightly bigger(not too much) than the marbles</li>
-          <li>Use this eraser to carve a hole at the bottom of the bowl</li>
-      </ol>
-    </div>
-    <div>
-      <h1>
-       Spinners 
-      </h1>
-    </div>
-    <div>
-      Spinners are used throughout every marble race. From Classic Marbles Races to fully themed Marble Racees, spinners is an important
-      part of Marble Races to be able to make.
+      Same as teleporters, lots of backstage action. These velocity pads apply a certain velocity(direction and speed) to an object. 
+      These are unarguably the most used element in Marble Racing.
     </div>
     <div>
       <h5>
         To start, go along with the following steps:
       </h5>
       <ol>
-        <li>Make a custom sized rectangle(The height should be 5 times the width)</li>
-        <li>Hold Ctrl or Command, based on your computer, and then click on the rectangle. This creates a copy of it</li>
-        <li>Click(yep, only click, do not select)the rectangle, then Turn it 90 degrees. The original rectangle below should stay where it was at the beginning</li>
-        <li>Now you should have a plus sign. These next steps are very important.</li>
-        <li>From the plus sign, select the rectangle that has overlaps the other, and go in the menu. Then, click on Combine Shapes, and after that, 
-            click Add. Then exit the menu. Now, delete the rectangle that overlaps the other. You will now see just a plus sign, no overlaps</li>
-        <li>Enter the plus sign menu, and go to Geometry Action. Click on add axle. The Axle will be shown on the plus sign(now about to be a spinner)</li>
-        <li>Go in the Axle menu, and turn the "a"(In the HSVA slider section) in the Appearance section to 0</li>
-        <li>Go to the Axle section, and click the check on Motor. 2 sliders will appear, and set the one that says Motor Torque to the max(or maybe 
-          100 ^ 1000, which sets it to infinite). The Motor Speed is to your choice</li>
+        <li>Make a custom shape(best to use a rectangle)</li>
+        <li>Go in the object's script, type: e.other.vel = *[x,y]</li>
+        <li>*The coordinates sends the object in that x(horizontal) and y(vertical). Note that the velocity pads do not add on to the 
+            the marble's(or any colliding object's) velocity; they simply replace them. </li>
       </ol>
     </div>
-    <div>
-      <h1>
-       Trampolines 
-      </h1>
-    </div>
-    <div>
-      Trampolines, otherwise known as bounce pads, are not used very much. Instead, velocity pads are used more, and are more advanced.
-      But, hey, it is still good to learn something than to not.
-    </div>
-    <div>
-      <h5>
-        To start, go along with the following steps:
-      </h5>
-      <ol>
-        <li>Make a custom sized rectangle</li>
-        <li>Go in the Menu, then to Material. Set the restitution to a custom value. 1000 makes an object bounce on it, with the same bounce height every time</li>
-      </ol>
-    </div>
-    <div>
-      <h1>
-       Text 
-      </h1>
-    </div>
-    <div>
-      Words are used commonly throughout Marble Races. That's why you should know how to make them!
-    </div>
-    <div>
-      <h5>
-        To start, go along with the following steps:
-      </h5>
-      <ol>
-        <li>Make a custom sized rectangle</li>
-        <li>Go in the Menu, and in the Text section, add the words you want in the big box</li>
-        <li>You can change the color of the text at the color selection below the box</li>
-        <li>Maybe your text looks a bit too small, so change the font size to your desire</li>
-        <li>Maybe your texts looks a bit too pixelated, so change the font resolution to the max</li>
-      </ol>
-    </div>
-    <div>
-      <h1>
-       Conveyor 
-      </h1>
-    </div>
-    <div>
-      Conveyors are commonly used in basic marble races. That's all I can say:)
-    </div>
-    <div>
-      <h5>
-        To start, go along with the following steps:
-      </h5>
-      <ol>
-        <li>Make a custom shaped spinner(Oval and square ones are recommended)</li>
-        <li>Make a copy of the spinner, and put it next to the original</li>
-        <li>Set the collision layer of the 2nd different from the first. This prevents the 2 spinners from getting stuck on each other. If your 2 spinners 
-            are too far away to collidee with each other, move them closer.</li>
-        <li>Turn the 2nd spinner so it is pointing 90 degrees right of the 1st.</li>
-        <li>Make a copy of both(I recommend to copy them at the same time to make it neat), and put the copy next to the original 2. Do the distance check shown in step 3. Now you should have 4 spinners</li>
-        <li>Make as much copies as you want, and remember to distance check them.</li>
-      </ol>
-    </div>
-    <div>
-      <h1>
-       Controller(*Important!*) 
-      </h1>
-    </div>
-    <div>
-      Controllers are used to start a section of a marble race, by hand. After making one, press the trigger key and the block will disappear, lettin
-      any Marble above it start the next section of your race.
-    </div>
-    <div>
-      <h5>
-        To start, go along with the following steps:
-      </h5>
-      <ol>
-        <li>Make a custom shape to be destroyed</li>
-        <li>Go in the objects Menu, and go in Controller. Set the destroy key by clicking on "[none selected]"</li>
-      </ol>
-    </div>
-    <div>
-      <h1>
-       Piston **!!!More Important!!!**
-      </h1>
-    </div>
-    <div>
-      Pistons may not sound or look important at first, but it is used to move an object back and forth, while using a script to make 
-      an object do the same thing is just a little too complicated to explain. Note: The steps of how to make it written by me down below
-      is using my best explaining abilities.
-    </div>
-    <div>
-      <h5>
-        To start, go along with the following steps:
-      </h5>
-      <ol>
-        <li>Make a custom sized rectangle, with the height 5 times as much as the width. Make sure to glue it to the background</li>
-        <li>Make a copy of it and put the copy next to the original, horizontally. Space the distance between them as the width of the moving object</li>
-        <li>Make a custom object(this will be the moving object), and fit it between the rectangle created on the previous step. Do not glue it to the background</li>
-        <li>Make a custom sized circle. The circumference of the circle will be how far the moving object moves. Do not glue it to the background</li>
-        <li>Use a brush, or make a rectangle, that overlaps the moving object on one side, and the circle on the other. Do not glue it to the background</li>
-        <li>Put an axle with the axle tool on the space where the bar overlaps the circle, and where it overlaps the moving object. If you make a motor on it, good luck
-            with seeing your piston wobble back and forth right when you run the simulation</li>
-        <li>Go in the menu for the circle, and add a center axle in Geometry Actions. Set the Motor Torque very high, and the speed is for you to decide.</li>
-        <li>*One last step* Make sure that the moving object and the rectangles made in step 1 have at least 1 common collision layer</li>
-        <li>...aaannd your done!!! It should work like a piston now</li>
-      </ol>
-    </div>
-    <div>
-      <h1>
-       Conclusion...for the Beginner level, at least... 
-      </h1>
-    </div>
-    <div>
-      Make a fantastic marble, maybe, and say bye to this website. Or continue to the Intermediate Level, and instead of just making boring classic Marble Races,
-      you can make better ones...more chaotic...or more epic...or maybe, get to the legendary <a href="https://www.youtube.com/channel/UC7dTk7z9VcaHiYmUP0ytZcg">
-      Doc 671</a>'s level(Don't try this at home, everyone).
-    </div>
-    <div class="jumbotron text-center">
-      <h1 class="bigheader"> <a href="https://brocoliman.github.io/amr_tutorial/scripting.html">The Next Section: Scripting</a> </h1>
     </div>
   </body>
 </html>
