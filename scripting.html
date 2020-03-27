@@ -155,7 +155,7 @@
         </h5>
         <ol>
           <li>Make a custom shape(best to use a rectangle)</li>
-          <li>Go in the object's script, type: e.other.vel = *[x,y]</li>
+          <li>Go in the object's script, and in onCollide, type: e.other.vel = *[x,y]</li>
           <li>*The coordinates sends the object in that x(horizontal) and y(vertical). Note that the velocity pads do not add on to the 
               the marble's(or any colliding object's) velocity; they simply replace them. </li>
         </ol>
@@ -175,7 +175,7 @@
         </h5>
         <ol>
           <li>Make a custom shape(best to use a rectangle)</li>
-          <li>Go in the object's script, type: e.other.density = *x</li>
+          <li>Go in the object's script, and in onCollide, type: e.other.density = *x</li>
           <li>*The smaller the number, the higher the marble will float to! As a general guide, 0.01 keeps the marble where it is, and 0.005 makes it 
                 float up at a smooth pace</li>
           <li>Try it out!!</li>
@@ -187,19 +187,39 @@
         </h1>
       </div>
       <div>
-        Variables are the building blocks of programming and scripting. They may not seem useful aat the moment, but 
-        you MUST know this, or else...
+        Variables are the building blocks of programming and scripting. They may not seem useful at the moment, but I will show you the variable magic
+        later on...
       </div>
       <div>
         <h5>
-          To start, go along with the following steps:
+          To create a variable, go along with the following steps:
         </h5>
         <ol>
-          <li>Make a custom shape for </li>
-          <li>Go in the object's script, type: e.other.density = *x</li>
-          <li>*The smaller the number, the higher the marble will float to! As a general guide, 0.01 keeps the marble where it is, and 0.005 makes it 
-                float up at a smooth pace</li>
-          <li>Try it out!!</li>
+          <li>Go in an object's script, and in the bar below the description, type *x=*y </li>
+          <li>*This is really important!!!!!
+              x is the name of the variable and y is the value it holds.
+            <ul>
+              <li>Adding "scene.my." to the left of the name will make it global</li>
+              <li>Making a variable global will, of course, let any object access it, and if it is change from one object,
+                  it will be changed throughout the whole scene</li>
+              <li>If you don't want the variable to be global, add an underscore(_) to the left of the name.
+                  This way, it only creates the variable for this object</li>
+              <li>If you don't add anything to the variable name, it will only appear as a variable in that property(or curly bracket)</li>
+            </ul>
+          </li>
+          <li>
+            You don't have to know about all of these, but they are just for reference
+            <ul>
+              <li>There are 4 types of basic types of values for y: integer, float, string, boolean</li>
+              <li>Integers are a non-decimal numeric value. CollideSets(collision layer values) use these</li>
+              <li>Floats are decimal-including number. Angles might include these</li>
+              <li>Strings are a piece of text, put in quotation marks. Texts use these</li>
+              <li>Booleans are just true and false. Killer and Immortal use these</li>
+              <li>There are several more value types</li>
+              <li>Array are a list of basic value, which don't have to be the same type. Velocity and positions use them</li>
+              <li>Codes(the bits of scripts) can be stored as a value. OnCollide and similar properties use these</li>
+            </ul>
+          </li>
         </ol>
      </div>
   </body>
