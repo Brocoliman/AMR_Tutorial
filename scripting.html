@@ -133,7 +133,7 @@
           <li>Make 2 custom sized shapes</li>
           <li>Go in ones script menu, and in onCollide, in the "(e)=>{}"(you never put your code outside of that, unless the section doesn't have it), type:
                e.other.pos = my.*varx</li>
-          <li>Go in the other object's script, and in the postStep, write: my.*var1 = pos</li> 
+          <li>Go in the other object's script, and in the postStep, write: my.*varx = pos</li> 
           <li>*The code after the asterisk is a variable, so you can customize the name, as long as both are same</li>
           <li>The teleporter will only work if an object goes in the right one, which is the one coded in Step 2. Also, the teleporter won't work on an 
               object that doesn't have any common collision layer as the teleporter. It is best to cancel out all the collision layers
@@ -176,7 +176,28 @@
         </h5>
         <ol>
           <li>Make a custom shape(best to use a rectangle)</li>
-          <li>Go in the object's script, type: e.other.desnity = *x</li>
+          <li>Go in the object's script, type: e.other.density = *x</li>
+          <li>*The smaller the number, the higher the marble will float to! As a general guide, 0.01 keeps the marble where it is, and 0.005 makes it 
+                float up at a smooth pace</li>
+          <li>Try it out!!</li>
+        </ol>
+     </div>
+     <div>
+        <h1>
+         Variables
+        </h1>
+      </div>
+      <div>
+        Variables are the building blocks of programming and scripting. They may not seem useful aat the moment, but 
+        you MUST know this, or else...
+      </div>
+      <div>
+        <h5>
+          To start, go along with the following steps:
+        </h5>
+        <ol>
+          <li>Make a custom shape for </li>
+          <li>Go in the object's script, type: e.other.density = *x</li>
           <li>*The smaller the number, the higher the marble will float to! As a general guide, 0.01 keeps the marble where it is, and 0.005 makes it 
                 float up at a smooth pace</li>
           <li>Try it out!!</li>
